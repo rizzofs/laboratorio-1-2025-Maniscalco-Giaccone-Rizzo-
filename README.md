@@ -8,8 +8,9 @@
 
 # Grupo
 
-- Estudiante 1 (Legajo 1) - cor...@estudiante1.com
-- Estudiante 2 (Legajo 2) - cor...@estudiante2.com
+- Candela Maniscalco (193545) - candem@estudiante1.com
+- Valentín Giaccone (195454) - valeng@estudiante2.com
+- Federico Rizzo (179404) - federicor@estudiante3.com
 
 # Contexto / Escenario
 
