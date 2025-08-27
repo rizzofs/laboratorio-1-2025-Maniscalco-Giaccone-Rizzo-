@@ -11,7 +11,7 @@
 - Candela Maniscalco (193545) - candem@estudiante1.com
 - Valentín Giaccone (195454) - valeng@estudiante2.com
 - Federico Rizzo (179404) - federicor@estudiante3.com
-
+  (FALTA TERMINAR - CHIVILCOY)
 # Contexto / Escenario
 
 En el reino místico de Instanciaveria, la Academia de Hechicería Arcana necesita urgentemente un sistema para catalogar
