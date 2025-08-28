@@ -42,7 +42,7 @@ class CatalogoArtefactosTest {
   @Test
   @DisplayName("Debe devolver un conjunto de artefactos únicos")
   void testObtenerArtefactosUnicos() {
-    Set<Artefacto> unicos = catalogo.obtenerArtefactosUnicos();
+    Set<Artefacto> unicos = (Set<Artefacto>) catalogo.obtenerArtefactosUnicos();
     assertNotNull(unicos);
     assertEquals(4, unicos.size());
     assertTrue(unicos.contains(varitaSauco));

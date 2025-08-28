@@ -7,14 +7,14 @@ public class CatalogoArtefactos {
     private Set<Artefacto> l_artefactos;
 
     public CatalogoArtefactos() {
-        this.l_artefactos = null;
+        this.l_artefactos = new HashSet<>();
     }
 
     public Set<Artefacto> getL_artefactos() {
         return l_artefactos;
     }
 
-    public List BuscarArtefactoPorTipo(String tipo){
+    public List buscarArtefactosPorTipo(String tipo){
         List<Artefacto> lista = new ArrayList<>();
 
         l_artefactos.forEach(artefacto -> {
@@ -36,14 +36,55 @@ public class CatalogoArtefactos {
         return lista;
     }
 
-    public Map contarArtefactosPorTipo(String tipo){
+    public Map contarArtefactosPorTipo(){
         Map<String, Integer> mapa = new HashMap<>();
 
-        l_artefactos.forEach(artefacto -> {
+        for (Artefacto artefacto:l_artefactos){
+            String tipoAux = artefacto.getTipo();
+            mapa.put(tipoAux, mapa.getOrDefault(tipoAux,0) + 1);
+        }
+        return mapa;
+        /*l_artefactos.forEach(artefacto -> {
+
             if (artefacto.getTipo() == tipo){
                 int cantidad = mapa.get(artefacto.getNombre());
                 mapa.put(artefacto.getNombre(), cantidad + 1);
             }
         });
+        return mapa;*/
     }
+    //Agregadas
+
+    public void agregarArtefacto(Artefacto artefacto){
+        l_artefactos.add(artefacto);
+    }
+    public Set<Artefacto> obtenerArtefactosUnicos(){
+        return new HashSet<>(l_artefactos);
+    }
+    /*public List<Artefacto> buscarArtefactoPorTipo(String tipo){
+        List<Artefacto> auxiliar = new ArrayList<>();
+
+        for(Artefacto artefacto : l_artefactos){
+            if(artefacto.getTipo().equals(tipo)){
+                auxiliar.add(artefacto);
+            }
+        }
+        //Ordenar la lista
+
+    }*/
+    public Artefacto obtenerArtefactoMasPoderoso(){
+        if(l_artefactos.isEmpty()){
+            return null;
+        }
+        Artefacto mayorAux = null;
+        for(Artefacto art : l_artefactos){
+            if(mayorAux == null || art.getPoder() > mayorAux.getPoder()){
+                mayorAux = art;
+            }
+
+        }
+        return  mayorAux;
+
+    }
+
 }

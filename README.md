@@ -11,7 +11,7 @@
 - Candela Maniscalco (193545) - candem@estudiante1.com
 - Valentín Giaccone (195454) - valeng@estudiante2.com
 - Federico Rizzo (179404) - federicor@estudiante3.com
-  (FALTA TERMINAR - CHIVILCOY)
+- 
 # Contexto / Escenario
 
 En el reino místico de Instanciaveria, la Academia de Hechicería Arcana necesita urgentemente un sistema para catalogar
@@ -44,7 +44,9 @@ Debes desarrollar la clase `CatalogoArtefactos` que gestionará una colección d
    - **Set<Artefacto> obtenerArtefactosUnicos()**: Devuelve un conjunto (`Set`) con todos los artefactos del catálogo, garantizando que no haya duplicados.
    - **List<Artefacto> buscarArtefactosPorTipo(String tipo)**: Devuelve una lista (`List`) de artefactos que coincidan con el tipo especificado. La lista debe estar ordenada de mayor a menor poder.
    - **Map<String, Integer> contarArtefactosPorTipo()**: Devuelve un mapa (`Map`) donde la clave es el tipo de artefacto y el valor es la cantidad de artefactos de ese tipo existentes en el catálogo.
-   - **Artefacto obtenerArtefactoMasPoderoso()**: Devuelve el artefacto con el mayor nivel de poder. Si hay varios con el mismo poder máximo, puede devolver cualquiera de ellos. Si el catálogo está vacío, debe devolver `null`.
+   - **Artefacto obtenerArtefactoMasPoderoso()**: Devuelve el artefacto con el mayor nivel de poder. 
+   - Si hay varios con el mismo poder máximo, puede devolver cualquiera de ellos. 
+   - Si el catálogo está vacío, debe devolver `null`.
 
 # Requerimientos Específicos
 
